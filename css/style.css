@@ -1,0 +1,67 @@
+.boxcenter,span{
+    background-color: rgba(0,0,0,.87);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer{
+    color: white;
+    background-color: rgba(0,0,0,.87);
+}
+.box{
+    background-color: rgba(0,0,0,.87);
+}
+.address{
+    display: none;
+}
+.mainmenu1 .down-arrow,.mainmenu2 .down-arrow,.mainmenu3 .down-arrow{
+    display: none;
+}
+.footer .boxcenter .boxflex{
+    display: flex;
+}
+.icons a{
+    color: white;
+    margin: 0 5px;
+}
+.icons h3{
+    color: #f56a6a;
+}
+.links span a,.box span a{
+    color: white;
+    text-decoration: none;
+}
+.links span a:hover,.icons a:hover,.box span a:hover{
+    color: #f56a6a;
+    transition: 0.3s ease;
+}
+.links span a:hover,.box span a:hover{
+    text-decoration: underline;
+}
+@media only screen and (max-width:700px){
+    .boxcenter{
+        flex-direction: column;
+    }
+    .address{
+        display: block;
+    }
+    .submenu1,.submenu2,.submenu3{
+        display: none;
+    }
+    .mainmenu1 .down-arrow,.mainmenu2 .down-arrow,.mainmenu3 .down-arrow{
+        display: inline-block;
+        position: absolute;
+        right: 10%;
+        top: 5%;
+        cursor: pointer;
+    }
+    .submenu1.show1,.submenu2.show2,.submenu3.show3{
+        display: block;
+        margin-top: 20px;
+    }
+    .menu{
+        position: absolute;
+        left: 20px;
+        top: 0;
+    }
+}
